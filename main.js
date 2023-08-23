@@ -1,13 +1,14 @@
-let primeraCarta = document.getElementById("carta1").value;;
+let primeraCarta = 0;
 let segundaCarta = 0;
 
 do {
-    alert(primeraCarta);
+    primeraCarta = prompt("Ingrese su primera carta");
+    console.log(primeraCarta);
 }
 while (isNaN(primeraCarta));
 
 do {
-    segundaCarta = document.getElementById("carta2").value;
+    segundaCarta = prompt("Ingrese su segunda carta");
     console.log(segundaCarta);
 }
 while (isNaN(segundaCarta));
