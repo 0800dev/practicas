@@ -1,29 +1,27 @@
-let primeraCarta = 0;
-let segundaCarta = 0;
 
 do {
     primeraCarta = prompt("Ingrese su primera carta");
-    console.log(primeraCarta);
+    alert("Tu primera carta es " + (primeraCarta));
 }
 while (isNaN(primeraCarta));
 
 do {
     segundaCarta = prompt("Ingrese su segunda carta");
-    console.log(segundaCarta);
+    alert("Tu segunda carta es " + (segundaCarta));
 }
 while (isNaN(segundaCarta));
 
-function sumarEnvido(primeraCarta, segundaCarta) {
-    let envido = primeraCarta + segundaCarta + 20;
-    alert(envido);
-    if (envido < 27) {
-        console.log("Que la canten ellos");
-    } else if (envido >= 27 && envido < 30) {
-        console.log("Envido!");
-    }
-    else if (envido > 30) {
-        console.log("Real Envido");
-    }
-};
+(function sumarEnvido () {
+     let envido = parseInt(primeraCarta) + parseInt(segundaCarta) +20 ; 
+        
+        if (envido < 27) {
+            alert("Que la canten ellos");
+        } else if (envido >= 27 && envido < 30) {
+            alert("Envido!");
+        }
+        else if (envido >= 30) {
+            alert("Falta Envido");
+        }
+    })();
 
 
