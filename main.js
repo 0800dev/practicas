@@ -12,7 +12,7 @@ do {
 while (isNaN(segundaCarta));
 
 (function sumarEnvido () {
-     let envido = parseInt(primeraCarta) + parseInt(segundaCarta) +20 ; 
+     let envido = parseInt(primeraCarta) + parseInt(segundaCarta) + 20 ; 
         
         if (envido < 27) {
             alert("Que la canten ellos");
