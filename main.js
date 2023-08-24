@@ -1,4 +1,5 @@
-
+let primeraCarta;
+let segundaCarta;
 do {
     primeraCarta = prompt("Ingrese su primera carta");
     alert("Tu primera carta es " + (primeraCarta));
@@ -15,7 +16,7 @@ while (isNaN(segundaCarta));
      let envido = parseInt(primeraCarta) + parseInt(segundaCarta) + 20 ; 
         
         if (envido < 27) {
-            alert("Que la canten ellos");
+            alert("Que lo canten ellos");
         } else if (envido >= 27 && envido < 30) {
             alert("Envido!");
         }
